@@ -8,7 +8,7 @@ on:
 env:
   APP_NAME: Employeesboard
   APP_PORT: 12345
-  APP_ADDRESS: employeesboard.bieda.it
+  APP_ADDRESS: eboard.bieda.it
   TARGET_HOST: ${{ secrets.TARGET_HOST_BETA }}
   TARGET_PORT: ${{ secrets.TARGET_PORT_BETA }}
   TARGET_USERNAME: ${{ secrets.USERNAME_BETA }}
@@ -23,6 +23,13 @@ jobs:
       with:
         dotnet-version: '6.0.x' 
     - run: dotnet publish ${{env.APP_NAME}} -o publish --configuration Release
+        
+    - name: App Settings Variable Substitution
+      uses: microsoft/variable-substitution@v1
+      with:
+        files: 'publish/${{env.APP_NAME}}/appsettings.json'
+      env:
+        ConnectionStrings.Default: ${{ secrets.CONNECTION_STRING }}
     
     - name: Deploy
       uses: appleboy/scp-action@master
