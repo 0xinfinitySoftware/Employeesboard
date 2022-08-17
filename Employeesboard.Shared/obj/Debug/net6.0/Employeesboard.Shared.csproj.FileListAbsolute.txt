@@ -1,0 +1,12 @@
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\bin\Debug\net6.0\Employeesboard.Shared.deps.json
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\bin\Debug\net6.0\Employeesboard.Shared.dll
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\bin\Debug\net6.0\Employeesboard.Shared.pdb
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\obj\Debug\net6.0\Employeesboard.Shared.csproj.AssemblyReference.cache
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\obj\Debug\net6.0\Employeesboard.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\obj\Debug\net6.0\Employeesboard.Shared.AssemblyInfoInputs.cache
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\obj\Debug\net6.0\Employeesboard.Shared.AssemblyInfo.cs
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\obj\Debug\net6.0\Employeesboard.Shared.csproj.CoreCompileInputs.cache
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\obj\Debug\net6.0\Employeesboard.Shared.dll
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\obj\Debug\net6.0\refint\Employeesboard.Shared.dll
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\obj\Debug\net6.0\Employeesboard.Shared.pdb
+C:\Users\dominik.salach\source\repos\Employeesboard\Employeesboard.Shared\obj\Debug\net6.0\ref\Employeesboard.Shared.dll
