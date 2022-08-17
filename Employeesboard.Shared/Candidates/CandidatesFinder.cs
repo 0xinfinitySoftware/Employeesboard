@@ -21,7 +21,7 @@ namespace Employeesboard.Shared.Candidates
         {
             var dbConnection = _connectionFactory.CreateConnection();
 
-            return await dbConnection.QueryAsync<CandidateDTO>("SELECT Id,FirstName,LastName,Email,Phone FROM schCandidates.tProfiles");
+            return await dbConnection.QueryAsync<CandidateDTO>("SELECT Id,FirstName,LastName,Email,Phone FROM tProfiles");
         }
     }
 }
