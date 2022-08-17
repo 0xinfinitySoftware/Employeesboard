@@ -12,9 +12,9 @@ namespace Employeesboard
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<ICandidatesFinder, CandidatesFinder>();
-            string connString = builder.Configuration.GetConnectionString("Default");
+            string connString = builder.Configuration.GetConnectionString("Default").Replace("\"", string.Empty);
             builder.Services.AddScoped<IConnectionFactory, MysqlConnectionFactory>(b => new MysqlConnectionFactory(connString));
-           
+
             var app = builder.Build();
             app.Urls.Add("http://localhost:12345");
 
