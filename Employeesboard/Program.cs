@@ -1,3 +1,6 @@
+using Employeesboard.Shared.Candidates;
+using Employeesboard.Shared.Database;
+
 namespace Employeesboard
 {
     public class Program
@@ -8,10 +11,13 @@ namespace Employeesboard
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            
+            builder.Services.AddScoped<ICandidatesFinder, CandidatesFinder>();
+            string connString = builder.Configuration.GetConnectionString("Default");
+            builder.Services.AddScoped<IConnectionFactory, MysqlConnectionFactory>(b => new MysqlConnectionFactory(connString));
+           
             var app = builder.Build();
             app.Urls.Add("http://localhost:12345");
-            
+
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
@@ -30,7 +36,7 @@ namespace Employeesboard
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
-            
+
             app.Run();
         }
     }
