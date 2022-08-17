@@ -8,7 +8,7 @@ on:
 env:
   APP_NAME: Employeesboard
   APP_PORT: 12345
-  APP_ADDRESS: employeesboard.bieda.it
+  APP_ADDRESS: eboard.bieda.it
   TARGET_HOST: ${{ secrets.TARGET_HOST_BETA }}
   TARGET_PORT: ${{ secrets.TARGET_PORT_BETA }}
   TARGET_USERNAME: ${{ secrets.USERNAME_BETA }}
