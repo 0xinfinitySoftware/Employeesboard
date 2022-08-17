@@ -27,7 +27,10 @@ jobs:
     - name: App Settings Variable Substitution
       uses: microsoft/variable-substitution@v1
       with:
-        files: 'publish/${{env.APP_NAME}}/*.json'
+        files: './publish/${{env.APP_NAME}}/appsettings.json'
+        script: |
+          ls
+          pwd
       env:
         ConnectionStrings.Default: ${{ secrets.CONNECTION_STRING }}
     
